@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html>
+    
+<head>
+	<title> Myers briggs personality prediction | About </title>
+	<!-- External CSS file -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Our own css files -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+	<!-- Bootstrap CDN -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- This is the nav bar. Paste on every page at the top of the body-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+	<a class="navbar-brand" href="/">MB|PREDICTOR</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+  
+	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+	  <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="/methodology">Methodology</a>
+        </li>
+		<li class="nav-item">
+		  <a class="nav-link" href="/analysis">Analysis</a>
+        </li>
+		<li class="nav-item">
+		  <a class="nav-link" href="/about">About</a>
+		</li>
+	  </ul>
+	</div>
+</nav>
+
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">About us</h1>
+        <p class="lead">
+          A small but dedicated team working together to puzzle out some machine learning for myers-briggs personalities.
+        </p>
+    </div>
+</div>
+    
+ 
+<!-- Bios section -->
+<section class="bios">
+    <div class="container">
+        <div class="row">
+            
+            <a href="https://www.linkedin.com/in/ektasharma3/" target="_blank">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img class="card-img" src="{{ url_for('static', filename='images/ekta.png') }}" alt="Ekta Sharma">
+            </a>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-lg-8 col-md-6 col-sm-12">
+                <br>
+                <h3>Ekta Sharma</h3>
+                <br>
+                <p>An aspiring data scientist with previous experience in consulting and banking industry - passionate about coding and solving challenging business problems. A novice story teller who loves to wrestle with data and apply machine learning to find stories and solutions. Enjoys listening to music, painting, going out for long walks, and spending time with family.</p>
+            </div>
+        </div>
+    </div>
+<br>
+<hr>
+
+<div class="container">
+    <div class="row">
+
+        <a href="https://www.linkedin.com/in/jdaltuve/" target="_blank"></a>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <img class="card-img" src="{{ url_for('static', filename='images/david.png') }}" alt="David Altuve">
+        </a>
+        </div>
+        <div class="col-1"></div>
+            <div class="col-lg-8 col-md-6 col-sm-12">
+            <br>
+            <h3>David Altuve</h3>
+            <br>
+            <p>Nerdy extrovert that gets a kick out of working in tech. Born & raised in Venezuela but have spent most of his adult life in the US. International marketer by day, musician by night. CrossFitter if time allows. It’s 5 o’clock somewhere so cheers to you!</p>
+        </div>
+    </div>
+</div> 
+<br>
+<hr>
+
+<div class="container">
+    <div class="row">
+        <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/katherine-jansen-59244487/" target="_blank">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <img class="card-img" src="{{ url_for('static', filename='images/cat.png') }}" alt="Cat Jansen">
+        </a>
+        </div>
+        <div class="col-1"></div>
+            <div class="col-lg-8 col-md-6 col-sm-12">
+            <br>
+            <h3>Kat Jansen</h3>
+            <br>
+            <p>Introvert with a minor tea problem, major book problem, and a love of cats. Enjoys finding patterns and relationships in the true building blocks of life, data.</p>
+        </div>
+    </div>
+</div>
+<br>
+</section>
+
+</body>
+
+<!-- Footer stuff -->
+<footer class="page-footer font-small blue">
+	<div class="footer-copyright text-center py-3">© 2020 Copyright:
+	  <a href="index.html">UT Data Bootcamp</a>
+	</div>
+</footer>
+
+</html>
